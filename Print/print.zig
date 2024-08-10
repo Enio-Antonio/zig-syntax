@@ -8,7 +8,7 @@ pub fn main() !void {
     // Brief way to do it
     std.debug.print("Hello, world! Again...\n", .{});
 
-    // Print a variable (or constant, you think you got it...)
+    // Print a variable (or constant, I think you got it...)
     const i = 10;
     std.debug.print("{}\n", .{i});
 
