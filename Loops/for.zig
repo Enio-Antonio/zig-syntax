@@ -15,7 +15,7 @@ pub fn main() !void {
         std.debug.print("{}\n", .{i});
     }
 
-    // If you want to acess the element index
+    // If you want to visualize the element index
     for (array, 0..array.len) |element, i| {
         std.debug.print("{}[{}]\n", .{element, i});
     }
