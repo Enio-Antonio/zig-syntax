@@ -7,7 +7,6 @@ pub fn main() !void {
         std.debug.print("{}\n", .{i});
     }
 
-    // just a line break
     std.debug.print("\n", .{});
 
     // If you wanna go through some range, just use this operator

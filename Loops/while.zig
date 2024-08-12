@@ -13,7 +13,7 @@ pub fn main() !void {
     print("\n", .{});
     i = 0;
 
-    // While with a condition, kinda a like a for from C
+    // While with a step, kinda a like a for from C
     while (i < 5) : (i += 1) {
         print("{}\n", .{i});
     }
