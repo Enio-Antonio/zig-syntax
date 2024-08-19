@@ -1,6 +1,6 @@
 const std = @import("std");
 
-// There no way to do simple file list the syntax for allocators
+// There no way to a simple file to list the syntax for allocators
 // There are simply to many allocators
 
 // This example was taken from the official documentation
