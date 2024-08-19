@@ -12,10 +12,14 @@ pub fn main() !void {
     const i = 10;
     std.debug.print("{}\n", .{i});
 
+    // If the variable is "string", you need the identifier {s}
+    const string = "Just a string";
+    std.debug.print("{s}\n", .{string});
+
     // Print multiple variables
     const i_2 = 3;
     const i_3 = 4;
-    std.debug.print("i2 = {}\ni3 = {}", .{i_2, i_3});
+    std.debug.print("i_2 = {}\ni_3 = {}", .{i_2, i_3});
 
     // Don't forget the second argument of the print method,
     // it's mandatory! Even if you aren't printing a variable.
