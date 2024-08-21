@@ -9,4 +9,8 @@ pub fn main() !void {
 
     std.debug.print("oreNoArray[0]: {}\n", .{oreNoArray[0]});
     std.debug.print("oreNoArray_2[0]: {}\n", .{oreNoArray_2[0]});
+
+    // String array
+    const stringArray = [_][]const u8 {"string1", "string2"};
+    std.debug.print("stringArray[0]: {s}\n", .{stringArray[0]});
 }
