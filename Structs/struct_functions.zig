@@ -9,10 +9,11 @@ const OreNoStruct = struct {
 };
 
 // Another thing to do is use it like an object
+// But to this, the function must have the struct as a parameter
 const AnotherStruct = struct {
     property: u8,
 
-    // Sorry for the lack of creativity
+    // Sorry for the lack of creativity...
     pub fn printNumbers(self: AnotherStruct, number: u32) void {
         print("I need to use the self argument for something: {}.\nActual function usage: {}.", .{ self.property, number });
     }
