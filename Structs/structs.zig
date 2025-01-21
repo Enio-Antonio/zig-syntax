@@ -1,5 +1,6 @@
 const std = @import("std");
 const print = std.debug.print;
+
 pub fn main() !void {
     // A simple struct
     const OreNoStruct = struct { property_1: u8, property_2: u16 };
