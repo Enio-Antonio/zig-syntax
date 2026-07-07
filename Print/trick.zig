@@ -1,6 +1,6 @@
 const std = @import("std");
 
-// Instead of using std.debug.print or even std.io.getStdOut().writer()
+// Instead of using std.debug.print or even std.Io.File.stdout().writeStreamingAll()
 const print = std.debug.print;
 
 pub fn main() !void {
