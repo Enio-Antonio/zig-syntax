@@ -1,14 +1,7 @@
-// Example from "Introduction to Zig: a project based book", by Pedro Duarte Faria
-
 const std = @import("std");
 
-pub fn main() !void {
-    const stdout = std.io.getStdOut().writer();
-    const stdin = std.io.getStdIn().reader();
-
-    try stdout.writeAll("Type your name\n");
-    var buffer: [20]u8 = undefined;
-    @memset(buffer[0..], 0);
-    _ = try stdin.readUntilDelimiterOrEof(buffer[0..], '\n');
-    try stdout.print("Your name is: {s}", .{buffer});
+pub fn main(init: std.process.Init) !void {
+    var buffer: [5]u8 = undefined;
+    const bytesRead = try std.Io.File.stdin().readPositionalAll(init.io, &buffer, 0);
+    std.debug.print("{s}\n", .{buffer[0 .. bytesRead - 1]}); // -1 to ignore the newline
 }
